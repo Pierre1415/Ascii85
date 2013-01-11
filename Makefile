@@ -5,7 +5,7 @@ LIBS = -lm
 DEPS = ascii85.h
 OBJ  = ascii85.o ascii85i.o 
 
-default: all
+default: $(TARGET)
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
